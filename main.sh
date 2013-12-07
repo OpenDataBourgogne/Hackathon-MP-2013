@@ -4,7 +4,7 @@ pdf="$1"
 ! test -f "$pdf" && echo 'le script doit être appelé avec en argument le nom du fichier pdf ex: ./main.sh fichier.pdf' && exit 1
 
 # La commande suivante n'a besoin d'être executée qu'une seule fois, il faudra la commenter ensuite
-#sh pdf2svg.sh "$pdf"
+sh pdf2svg.sh "$pdf"
 
 # Quelques dépendances pour la suite :
 # sudo apt-get install libxml2-dev libxslt1-dev python2.7-dev
@@ -24,7 +24,7 @@ pdf="$1"
 # deactivate
 
 # à adapter suivant le dossier d'installation de l'environnement :
-source ~/pyenv/exodurbain/bin/activate
+source ~/pyenv/pdfparse/bin/activate
 
 > mp.csv
 
